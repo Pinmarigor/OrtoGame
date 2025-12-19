@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100dvh;
+    display: flex; 
+    flex-direction: column; 
+    font-family: sans-serif; 
+    align-items: center; 
+    background-color: #f0f0f0;
+}
+
+body h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#tabuleiro { 
+    display: grid; 
+    grid-template-columns: repeat(4, 80px); 
+    grid-gap: 5px; 
+    background-color: #333; 
+    padding: 10px; 
+}
+
+#mensagem { 
+    margin: 20px; 
+    padding: 10px; 
+    min-width: 300px; 
+    text-align: center; 
+    background: white; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    font-weight: bold; 
+}
+
+#btn-reset{
+    margin: 10px;
+    color: rgb(255, 0, 0);
+    background-color: #c0bebe;
+    border: 2px solid rgb(73, 199, 248);
+    border-radius: 10px;    
+    padding: 5px;
+}
+
+
+.celula { 
+    width: 80px;
+    height: 80px;
+    background-color: #c0bebe; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+
+.peca { 
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%; 
+    border: 2px solid rgba(0,0,0,0.1); 
+}
+
+.azul {
+    background-color: blue;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.branca {
+    background-color: white;
+}
+
+.destaque { 
+    background-color: #ffeb3b !important; 
+    border: 2px solid #fbc02d; 
+}
+.erro {
+    color: red; 
+}
+.sucesso { 
+    color: green; 
+}
